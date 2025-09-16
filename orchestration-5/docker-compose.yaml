@@ -1,0 +1,8 @@
+services:
+  ros2:
+    image: osrf/ros:kilted-desktop
+    command: bash -c "sleep infinity"
+    network_mode: host
+    privileged: true
+    volumes:
+      - ./ws:/ws

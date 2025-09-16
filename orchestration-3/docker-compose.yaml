@@ -1,0 +1,5 @@
+services:
+  nginx_hello:
+    image: nginxdemos/hello
+    ports:
+      - "8080:80"

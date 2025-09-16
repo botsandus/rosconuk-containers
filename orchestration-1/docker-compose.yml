@@ -1,0 +1,9 @@
+services:
+  talker:
+    image: osrf/ros:kilted-desktop
+    command: ros2 run demo_nodes_cpp talker
+  listener:
+    image: osrf/ros:kilted-desktop
+    command: ros2 run demo_nodes_cpp listener
+    depends_on:
+      - talker
